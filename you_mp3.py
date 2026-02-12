@@ -27,5 +27,4 @@ if st.button("다운로드"):
                 mime="audio/mp3"
             )
         st.success("다운로드 완료!")
-    except Exception as e:
-        st.error(f"오류 발생: {e}")
+    except Exception as e: 
