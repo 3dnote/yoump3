@@ -1,9 +1,6 @@
 import streamlit as st
 from pytubefix import YouTube
 import os
-import streamlit as st
-from pytubefix import YouTube
-import os
 
 st.title("유튜브 오디오 다운로드 (MP3)")
 video_url = st.text_input("유튜브 영상의 URL을 입력하세요:")
@@ -27,4 +24,5 @@ if st.button("다운로드"):
                 mime="audio/mp3"
             )
         st.success("다운로드 완료!")
-    except Exception as e: 
+    except Exception as e:
+        st.error(f"오류 발생: {e}")
