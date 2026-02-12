@@ -1,5 +1,5 @@
 import streamlit as st
-from pytubefix import YouTube
+from pytube import YouTube
 import os
 
 st.title("유튜브 오디오 다운로드 (MP3)")
